@@ -22,9 +22,9 @@ jobs:
      - uses: actions/checkout@v4
      - uses: actions/configure-pages@v5
      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-          retention-days: 30
+       with:
+         path: .
+         retention-days: 30
 
   deploy:
     needs: build
