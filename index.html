@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Advic Singh — Computer Science student at UW-Madison and Cybersecurity researcher. Terminal-style portfolio." />
+  <meta name="author" content="Advic Singh" />
+  <title>advic@portfolio:~$</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&amp;family=Fira+Code:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="crt-flicker" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="topbar-title">advic@portfolio: ~ — zsh — 120x40</span>
+    </div>
+    <nav class="topbar-nav">
+      <a href="#about">~/about</a>
+      <a href="#experience">~/experience</a>
+      <a href="#projects">~/projects</a>
+      <a href="#skills">~/skills</a>
+      <a href="#contact">~/contact</a>
+    </nav>
+  </header>
+
+  <main class="grid">
+
+    <!-- WELCOME / WHOAMI -->
+    <section class="card card-welcome span-col-3 span-row-4" id="whoami">
+      <div class="card-header">
+        <span class="prompt">advic@uw-madison</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        <span class="cmd">whoami</span>
+      </div>
+      <div class="card-body">
+        <p class="muted small"># identity</p>
+        <h1 class="hero-title">
+          <span class="accent">&gt;</span> Advic Singh
+          <span class="cursor">_</span>
+        </h1>
+        <p class="hero-sub">
+          <span class="tag">[CS]</span>
+          <span class="tag">[Cybersec]</span>
+          <span class="tag">[CTF]</span>
+        </p>
+        <p class="hero-desc">
+          Computer Science &amp; Data Science undergrad at the
+          <a href="https://www.wisc.edu/" target="_blank" rel="noreferrer">University of Wisconsin-Madison</a>.
+          I break things on purpose, write about how I did it, and ship code that does not break by accident.
+        </p>
+        <div class="btn-row">
+          <a class="btn" href="https://github.com/novic30" target="_blank" rel="noreferrer">
+            <span class="btn-prompt">$</span> git clone github.com/novic30
+          </a>
+          <a class="btn" href="https://linkedin.com/in/AdvicSingh" target="_blank" rel="noreferrer">
+            <span class="btn-prompt">$</span> open linkedin
+          </a>
+          <a class="btn" href="mailto:asingh304@wisc.edu">
+            <span class="btn-prompt">$</span> mail asingh304@wisc.edu
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="card span-col-1 span-row-6" id="about">
+      <div class="card-header">
+        <span class="prompt">advic@uw-madison</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        <span class="cmd">cat about.md</span>
+      </div>
+      <div class="card-body">
+        <h2 class="section-title"># About</h2>
+        <p class="small">
+          I am a CS &amp; Data Science student at UW-Madison (Dean's List, GPA 3.88), and a cybersecurity
+          enthusiast focused on offensive security, CTFs, and OSINT.
+        </p>
+        <p class="muted small mt"># core stack</p>
+        <ul class="chip-list">
+          <li class="chip">Java</li>
+          <li class="chip">Bash</li>
+          <li class="chip">Assembly (LC-3)</li>
+          <li class="chip">HTML</li>
+          <li class="chip">CSS</li>
+          <li class="chip">JavaScript</li>
+          <li class="chip">Git</li>
+          <li class="chip">Linux</li>
+          <li class="chip">Burp Suite</li>
+          <li class="chip">Wireshark</li>
+          <li class="chip">Nmap</li>
+          <li class="chip">JUnit</li>
+        </ul>
+        <p class="small mt">
+          Affiliations: <span class="accent">Cybersecurity UW leadership</span>, Medium blogger under
+          InfoSec Write-ups &amp; OSINT Team.
+        </p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="card span-col-1 span-row-4" id="education">
+      <div class="card-header">
+        <span class="prompt">advic@uw-madison</span><span class="colon">:</span><span class="path">~/edu</span><span class="dollar">$</span>
+        <span class="cmd">ls -la</span>
+      </div>
+      <div class="card-body">
+        <h2 class="section-title"># Education</h2>
+        <div class="entry">
+          <h3 class="entry-title">University of Wisconsin-Madison</h3>
+          <p class="muted small">B.S. Computer Science &amp; Data Science</p>
+          <p class="small">Madison, WI &middot; Expected May 2029</p>
+          <p class="small accent">GPA 3.88 &middot; Dean's List</p>
+        </div>
+        <p class="muted small mt"># relevant coursework</p>
+        <ul class="dash-list small">
+          <li>Data Structures &amp; Algorithms III</li>
+          <li>Computer Engineering</li>
+          <li>Discrete Mathematics</li>
+        </ul>
+        <p class="muted small mt"># upcoming</p>
+        <ul class="dash-list small">
+          <li>Algorithms</li>
+          <li>Machine Organization</li>
+          <li>Operating Systems</li>
+          <li>Networking</li>
+          <li>Computer &amp; Web Security</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NOW / STATUS -->
+    <section class="card card-now span-col-1 span-row-2">
+      <div class="card-header">
+        <span class="prompt">advic@uw-madison</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        <span class="cmd">status</span>
+      </div>
+      <div class="card-body">
+        <div class="now-row">
+          <h2 class="section-title">Now</h2>
+          <span class="pulse" title="online"></span>
+        </div>
+        <p class="small">
+          Studying CS at UW-Madison, building security write-ups, and grinding CTFs for the
+          <span class="accent">Cybersecurity UW</span> team.
+        </p>
+      </div>
+    </section>
+
+    <!-- BLOGS -->
+    <a href="https://medium.com/@viscidCTF" target="_blank" rel="noreferrer"
+       class="card card-link span-col-1 span-row-2" id="blogs">
+      <div class="card-header">
+        <span class="prompt">advic@medium</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        <span class="cmd">curl /blogs</span>
+        <span class="ext-icon" aria-hidden="true">&#x2197;</span>
+      </div>
+      <div class="card-body">
+        <h2 class="section-title link-title">Blogs &rarr; @viscidCTF</h2>
+        <p class="small">
+          50+ write-ups published under InfoSec Write-ups &amp; OSINT Team —
+          <span class="accent">65k+ views</span>, 34k+ reads.
+        </p>
+      </div>
+    </a>
+
+    <!-- GITHUB QUICK LINK -->
+    <a href="https://github.com/novic30" target="_blank" rel="noreferrer"
+       class="card card-link span-col-1 span-row-2">
+      <div class="card-header">
+        <span class="prompt">advic@github</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        <span class="cmd">gh repo list</span>
+        <span class="ext-icon" aria-hidden="true">&#x2197;</span>
+      </div>
+      <div class="card-body">
+        <h2 class="section-title link-title">github.com/novic30</h2>
+        <p class="small">Source for projects, CTF tooling, and class work.</p>
+      </div>
+    </a>
+
+    <!-- EXPERIENCE -->
+    <section class="card span-col-2 span-row-6" id="experience">
+      <div class="card-header">
+        <span class="prompt">advic@uw-madison</span><span class="colon">:</span><span class="path">~/work</span><span class="dollar">$</span>
+        <span class="cmd">tail -n +1 experience.log</span>
+      </div>
+      <div class="card-body">
+        <h2 class="section-title"># Experience</h2>
+
+        <article class="exp">
+          <header class="exp-head">
+            <h3 class="entry-title">Student Cybersecurity Lead</h3>
+            <span class="muted small">Oct 2024 - May 2025</span>
+          </header>
+          <p class="muted small">International School Bangkok &middot; Bangkok, Thailand</p>
+          <ul class="dash-list small">
+            <li>Led a cyber-awareness initiative reaching 100+ middle schoolers in a school-wide assembly.</li>
+            <li>Designed engaging phishing scenarios, including a clone of the school's official website.</li>
+            <li>Coordinated logistics directly with the middle school technology coordinator.</li>
+          </ul>
+        </article>
+
+        <article class="exp">
+          <header class="exp-head">
+            <h3 class="entry-title">AI &amp; Cloud Technology Intern</h3>
+            <span class="muted small">Summer 2024</span>
+          </header>
+          <p class="muted small">IBM &middot; Bangkok, Thailand</p>
+          <ul class="dash-list small">
+            <li>Worked on the fundamentals of building a customized, locally-hosted IBM Watson AI.</li>
+            <li>Pitched the prototype as part of a team to IBM Thailand executives.</li>
+            <li>Applied Azure Design Thinking methodology to project planning.</li>
+          </ul>
+        </article>
+
+        <article class="exp">
+          <header class="exp-head">
+            <h3 class="entry-title">Volunteer — Internal Pentest</h3>
+            <span class="muted small">Jan - Apr 2024</span>
+          </header>
+          <p class="muted small">International School Bangkok &middot; Bangkok, Thailand</p>
+          <ul class="dash-list small">
+            <li>Completed 100+ hours of TryHackMe training, earning cybersecurity certifications.</li>
+            <li>Scanned the internal school network using Angry IP Scanner with a team of 6.</li>
+            <li class="accent">Discovered a critical vuln granting unauthorized admin access to all school printers, including those used for exam papers.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="card span-col-2 span-row-4" id="projects">
+      <div class="card-header">
+        <span class="prompt">advic@uw-madison</span><span class="colon">:</span><span class="path">~/projects</span><span class="dollar">$</span>
+        <span class="cmd">ls</span>
+      </div>
+      <div class="card-body">
+        <h2 class="section-title"># Projects</h2>
+
+        <article class="proj">
+          <header class="proj-head">
+            <h3 class="entry-title">
+              <a href="https://medium.com/@viscidCTF" target="_blank" rel="noreferrer">
+                Cyber Security Content Creator &nbsp;<span class="ext-icon">&#x2197;</span>
+              </a>
+            </h3>
+            <span class="muted small">May 2024 - Present</span>
+          </header>
+          <p class="muted small">CTF &middot; Linux &middot; Web Security &middot; OSINT</p>
+          <ul class="dash-list small">
+            <li>Published 50+ write-ups under InfoSec Write-ups and OSINT Team.</li>
+            <li>Generated 65,000+ views and 34,000+ reads across publications.</li>
+            <li>Documented thought process for CTF challenge solutions.</li>
+          </ul>
+        </article>
+
+        <article class="proj">
+          <header class="proj-head">
+            <h3 class="entry-title">Cities Path-Finding Web Page</h3>
+            <span class="muted small">March 2026</span>
+          </header>
+          <p class="muted small">Java &middot; HTML &middot; Git &middot; Secure Coding</p>
+          <ul class="dash-list small">
+            <li>Implemented output validation to defend against XSS injection attacks.</li>
+            <li>Built backend using Dijkstra's algorithm to compute shortest paths between cities.</li>
+            <li>Returned HTML showing the shortest path and ten closest cities to any node.</li>
+            <li>Collaborated via GitLab using Git version control with a student team.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="card span-col-2 span-row-3" id="skills">
+      <div class="card-header">
+        <span class="prompt">advic@uw-madison</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        <span class="cmd">cat skills.json</span>
+      </div>
+      <div class="card-body">
+        <h2 class="section-title"># Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <p class="muted small">languages:</p>
+            <ul class="chip-list">
+              <li class="chip">Java</li>
+              <li class="chip">Bash</li>
+              <li class="chip">Assembly (LC-3)</li>
+              <li class="chip">HTML</li>
+              <li class="chip">CSS</li>
+              <li class="chip">JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <p class="muted small">tools &amp; frameworks:</p>
+            <ul class="chip-list">
+              <li class="chip">JUnit</li>
+              <li class="chip">Linux</li>
+              <li class="chip">VSCode</li>
+              <li class="chip">Git</li>
+              <li class="chip">GitLab</li>
+              <li class="chip">Burp Suite</li>
+              <li class="chip">Wireshark</li>
+              <li class="chip">Nmap</li>
+            </ul>
+          </div>
+          <div>
+            <p class="muted small">other:</p>
+            <ul class="chip-list">
+              <li class="chip">Google Dorking</li>
+              <li class="chip">OSINT Investigations</li>
+              <li class="chip">Digital Privacy</li>
+              <li class="chip">Guitar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="card span-col-2 span-row-2">
+      <div class="card-header">
+        <span class="prompt">advic@uw-madison</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        <span class="cmd">fortune</span>
+      </div>
+      <div class="card-body center">
+        <blockquote class="quote">
+          "Given enough eyeballs, all bugs are shallow."
+        </blockquote>
+        <p class="muted small">— Linus's Law</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card span-col-2 span-row-3" id="contact">
+      <div class="card-header">
+        <span class="prompt">advic@uw-madison</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+        <span class="cmd">./contact.sh</span>
+      </div>
+      <div class="card-body">
+        <h2 class="section-title"># Contact</h2>
+        <p class="small">
+          Open to internships, CTF teams, and security research collabs.
+          Reach out — I respond fast.
+        </p>
+        <ul class="contact-list">
+          <li>
+            <span class="muted">email   </span>
+            <a href="mailto:asingh304@wisc.edu">asingh304@wisc.edu</a>
+          </li>
+          <li>
+            <span class="muted">phone   </span>
+            <a href="tel:+16089807273">+1 (608) 980-7273</a>
+          </li>
+          <li>
+            <span class="muted">linkedin</span>
+            <a href="https://linkedin.com/in/AdvicSingh" target="_blank" rel="noreferrer">linkedin.com/in/AdvicSingh</a>
+          </li>
+          <li>
+            <span class="muted">github  </span>
+            <a href="https://github.com/novic30" target="_blank" rel="noreferrer">github.com/novic30</a>
+          </li>
+          <li>
+            <span class="muted">medium  </span>
+            <a href="https://medium.com/@viscidCTF" target="_blank" rel="noreferrer">medium.com/@viscidCTF</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>
+      <span class="prompt">advic@portfolio</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+      echo "built with HTML, CSS &amp; coffee" &middot; &copy; <span id="year"></span> Advic Singh
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
